@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+<div class="row my-5">
+
+    <div class="col-4 text-center my-5 text-light">
+        <h2 class="mt-5">Stay Connected</h2>
+        <h5 class="mt-5">iamrahulgurjar99@gmail.com</h5>
+        <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+    
+            <a href="https://www.linkedin.com/in/rahul-yadav-487291223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" >
+                <img class="social_links ms-3" src="{% static 'css/images/linkedin.png' %}" alt="linkedIn" width="50" height="50">
+            </a>
+    
+            <a href="https://github.com/RahulYadav-tech-gif" target="_blank" >
+                <img class="social_links ms-3" src="{% static 'css/images/github.png' %}" alt="github" width="50" height="50">
+            </a>
+    
+            <a href="https://www.instagram.com/rahul_yaddaavv/#" target="_blank" >
+                <img class="social_links ms-3" src="{% static 'css/images/insta.jpg' %}" alt="insta" width="50" height="50">
+            </a>
+    
+        </div>
+
+        
+    </div>
+
+    <div class="col-5 offset-1 mt-3">
+        <div class="container form-container">
+            {%include "messages.html"%}
+            <form method="POST">
+            {% csrf_token %}
+            <div class="form-group m-3">
+              <label for="exampleInputEmail1">Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" name="name" >
+            </div>
+            <div class="form-group m-3">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="email" name="email" >
+            </div>
+            <div class="form-group m-3">
+                <label for="exampleInputEmail1">Phone No.</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+            <div class="form-group m-3">
+                <label for="exampleInputEmail1">Message</label>
+                <textarea type="tel" class="form-control" id="msg" rows="2" name="description"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        
+        </div>
+    </div>
+
+</div>
+
+{% endblock content1 %}

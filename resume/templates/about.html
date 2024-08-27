@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+
+<div class="row my-5">
+    
+    <div class="col-4 d-flex justify-content-center align-items-center">
+        <div class="circular-image-container">
+            <img class="circular-image" src="{% static 'css/images/myimage.jpg' %}" alt="myimage">
+        </div>
+    </div>
+
+    <div class="col-7 text-left text-light">
+        <h2>Hello !</h2>
+        <p class="fs-5">
+            I am an enthusiastic and detail-oriented Python developer with a strong foundation in programming principles and a passion for problem-solving. Proficient in Python, I have honed my skills through extensive work with key libraries and frameworks such as Django, FastAPI, and Pandas. My experience spans a variety of projects, from developing robust web applications to analyzing complex datasets, and I am adept at writing clean, efficient, and maintainable code.
+        </p>
+        <p class="fs-5">
+            I am eager to apply my Python development skills to challenging and impactful projects. My goal is to contribute to a forward-thinking organization where I can leverage my technical expertise and problem-solving abilities to drive innovation and achieve tangible results. I am excited about the opportunity to grow professionally and make meaningful contributions to dynamic projects.
+        </p>
+
+    </div>
+    
+</div>
+
+<div class="row my-2">
+    <h2 class="text-center" style="color:#4fffb0">My Tech Stack</h2>
+
+    <div class="d-flex justify-content-around align-items-center mt-3">
+        <img
+            src="{% static 'css/images/html.png' %}"
+            width="70"
+            height="70"
+            alt="HTML Logo"
+            class="img-fluid"
+        />
+  
+        <img
+            src="{% static 'css/images/css.png' %}"
+            width="70"
+            height="70"
+            alt="CSS Logo"
+            class="img-fluid"
+        />
+  
+        <img
+            src="{% static 'css/images/python.jpg' %}"
+            width="60"
+            height="60"
+            alt="Python Logo"
+            class="img-fluid"
+        />
+  
+        <img
+            src="{% static 'css/images/django.png' %}"
+            width="70"
+            height="70"
+            alt="Django Logo"
+            class="img-fluid"
+        />
+
+        <img
+            src="{% static 'css/images/mysql.png' %}"
+            width="50"
+            height="50"
+            alt="MySql Logo"
+            class="img-fluid"
+        />
+    </div>
+  
+
+
+</div>
+
+{% endblock content1 %}

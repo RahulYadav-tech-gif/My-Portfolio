@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+
+<div class="row my-5">
+    <div class="col-12 d-flex justify-content-center align-items-center">
+        <div class="circular-image-container">
+            <img class="circular-image" src="{% static 'css/images/myimage.jpg' %}" alt="myimage">
+        </div>
+    </div>
+
+    <div class="col-12 text-center mt-3">
+        <h4 class="title">Hi, my name is</h4>
+        <div class="name">
+            <h1>Rahul Yadav</h1>
+            <h1>I am Python Developer</h1>
+        </div>
+    </div>
+
+    <div class="col-12 text-center mt-3">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+
+            <a href="https://www.linkedin.com/in/rahul-yadav-487291223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" >
+                <img class="social_links ms-3" src="{% static 'css/images/linkedin.png' %}" alt="linkedIn" width="50" height="50">
+            </a>
+
+            <a href="https://github.com/RahulYadav-tech-gif" target="_blank" >
+                <img class="social_links ms-3" src="{% static 'css/images/github.png' %}" alt="github" width="50" height="50">
+            </a>
+
+            <a href="https://www.instagram.com/rahul_yaddaavv/#" target="_blank" >
+                <img class="social_links ms-3" src="{% static 'css/images/insta.jpg' %}" alt="insta" width="50" height="50">
+            </a>
+
+        </div>
+    </div>
+    
+</div>
+{% endblock content1 %}
